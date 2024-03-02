@@ -17,6 +17,7 @@
 }
 
 .cards {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
 }
@@ -46,17 +47,21 @@
 }
 
 .card:hover .triangle{
-    background-color: rgb(10, 73, 136) !important;
-    transition: all 0.3s linear;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgb(20, 97, 174);
+
 }
 
 .triangle {
     position: absolute;
     top: 50%;
-    right: 271px; 
+    right: -29px; 
     transform: rotate(-90deg);
     width: 0;
     height: 0;
+    z-index: 1;
+    
 }
 
 #triangle1 {
